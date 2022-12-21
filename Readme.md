@@ -13,7 +13,16 @@
 
 <div align='center'>
  <image src="test/output.jpg" height="350" alt="Текст с описанием картинки" caption="Подпись под картинкой"/>
-</div> 
+</div>
+
+15 epochs training:
+
+f1_score: **0.885**
+
+precision: **0.920**
+
+recall: **0.852**
+
 
 
 ## **Зависимости**
