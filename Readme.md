@@ -85,13 +85,14 @@ recall: **0.852**
 Структура **checkpoints**.
 ```
 ├── checkpoints/
-│   ├──  version_0/                   # Папка с вашим экспериментом
-│           ├── checkpoints/
-|                   ├── name.ckpt     # Файл модели
-|           ├── tb_logs/
-|                   ├── events.out.tfevents.1671447233.namePC
-|                   ...
-|                   ├── hparams.yaml  # Файл гиперпараметров
-│   ├──  version_1
+│   ├──  lightning_logs/                   # Папка с вашим экспериментом
+│           ├── version_0/
+│                   ├── checkpoints/
+|                           ├── model.ckpt     # Файл модели
+|                   ├── tb_logs/
+|                           ├── events.out.tfevents.1671447233.namePC
+|                           ...
+|                           ├── hparams.yaml  # Файл гиперпараметров
+│           ├──  version_1
 │           ...
 ```
