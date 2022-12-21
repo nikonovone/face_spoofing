@@ -1,0 +1,4 @@
+image,spoof_type,spoof_label,box
+/4tb/nikonov/face_spoofing/test/no_spoof.jpg,PHONE,0,"[ 350,200, 820, 940 ]"
+/4tb/nikonov/face_spoofing/test/spoof.jpg,PHONE,1,"[ 250, 350, 750,1050]"
+celeba/test/512940_IFA7O9.jpg,PHONE,1,"[120, 157, 283, 408]"
