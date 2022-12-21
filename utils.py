@@ -44,7 +44,7 @@ def train_model(model_name, save_name=None, **kwargs):
         save_dir=kwargs['checkpoint_path'], log_graph=True, sub_dir='tb_logs')
     trainer = pl.Trainer(
         default_root_dir=os.path.join(
-            kwargs['checkpoint_path'], save_name),  # Where to save models
+            kwargs['checkpoint_path'],save_name),  # Where to save models
         # We run on a single GPU (if possible)
         accelerator='gpu' if str(kwargs['device']) == "cuda" else 'cpu',
         devices=kwargs['gpu_id'],
@@ -67,7 +67,8 @@ def train_model(model_name, save_name=None, **kwargs):
 
     # Check whether pretrained model exists. If yes, load it and skip training
     pretrained_filename = os.path.join(
-        kwargs['checkpoint_path'], save_name + ".ckpt")
+        kwargs['checkpoint_path'], 'lightning_logs/version_0/checkpoints/' + "model.ckpt")
+    print(pretrained_filename)
     if os.path.isfile(pretrained_filename):
         print(f"Found pretrained model at {pretrained_filename}, loading...")
         # Automatically loads the model with the saved hyperparameters
