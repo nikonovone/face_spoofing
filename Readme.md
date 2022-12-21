@@ -9,12 +9,6 @@
                     --num_epochs=NUM_EPOCHS
 ```
 
-Для теста точности модели:
-```
-    python test.py --data_dir=PATH_TO_DATASET                    
-                   --check_dir=PATH_TO_SAVE_LOGS
-                   --gpu_id=GPU Id
-```
 ## **Визуализация результатов работы**
 
 <div align='center'>
